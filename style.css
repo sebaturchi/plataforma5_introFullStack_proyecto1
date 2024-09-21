@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /*display: flex;
+    justify-content: center; /* Centra el contenedor horizontalmente */
+    margin: 0;
+    background-image: url('https://cdn.joinnus.com/wp-content/uploads/2023/12/14051633/megadeth.jpg');
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen esté fija en la pantalla */
+    background-position: center center; /* Posiciona la imagen en el centro */
+    background-size: cover; /* Ajusta la imagen para cubrir el área del fondo */
+    background-position: 10vw 0vh;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    max-width: 80vw; /* Ajusta el ancho máximo según lo necesites */
+    width: 100%; /* Ocupa todo el ancho disponible hasta el máximo */
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+header nav{
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 48, 48);
+}
+
+.contenedorNavUl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+
+.liHeader{
+    /*padding-top: 0.5vh;*/
+    padding-left: 3.5vw;
+    /*margin-top: 20vh;*/
+    color: rgb(209, 209, 209);
+}
+
+.fotoUsuarioNav{
+    width: 3.5vw;
+    border-radius: 100%;
+    display: inline;
+    padding-left: 0px;
+}
+
+.nombreUsuario{
+    margin-top: 0vh;
+    padding-top: 0vh;
+    color: rgb(209, 209, 209);
+    font-size: 0.9rem;
+
+}
+
+.banner{
+    display: flex;
+    width: fit-content;
+    height: 30vh;
+    justify-content: right;
+}
+
+.logoMegadeth{
+    width: fit-content;
+}
+
+.contenedorHome{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-top: 15vh;
+    margin-right: 10vw;
+    margin-bottom: 15vh;
+    margin-left: 12vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    color: white;
+    /*border: solid white;*/
+    background-color: rgba(70, 7, 7, 0.6);
+    border-radius: 2em;
+}
+
+.contenedorDescripcionHome{
+    margin-top: 5vh;
+    padding-top: 1em;
+}
+
+.descripcionHome1{
+    width: 70%;
+    text-align: left;
+    margin-bottom: 3em;
+}
+
+.descripcionHome2{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+
+.discografiaHome{
+    margin-top: 10vh;
+}
+
+.tituloDiscografiaHome{
+    font-size: 2em;
+    margin: 2em;
+    text-align: center;
+}
+
+.pDiscografiaHome{
+    padding: 2em;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0.5vw;
+    width: 100%; 
+    justify-items: center;
+}
+
+.presentacionDisco {
+    background-color: rgba(70, 7, 7, 0.9);
+    border-radius: 2em;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22vw;
+    height: 40vh;
+    font-size: 1.5em;
+}
+
+.imagenPresentacionDisco{
+    margin-top: 5%;
+    width: 80%;
+    height: 70%;
+}
+
+.eliminarDisco{
+    background-color: red;
+    font-size: 0.5em;
+    border: solid;
+}
+
+.anoTituloDisco{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: 0.6em;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+}
+
+.tituloDisco{
+    font-size: 0.8em;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/*EDITAR ALBUM*/
+
+.tituloEditarAlbum{
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 2em;
+}
+
+/*.formularioEditarAlbum{
+    padding-bottom: 10vh;
+}*/
+
+.labelFormulario{
+    display: block;
+}
+
+.formularioEditarAlbum{
+    text-align: center;
+}
+
+.labelFormulario{
+    margin-bottom: 1vh;
+}
+
+/*.spanFormulario{
+    background-color: rgba(188, 16, 16, 0.6);
+    border-radius: 10%;
+    padding: 1em;
+
+}*/
+
+.inputFormulario{
+    width: 60%;
+    margin-bottom: 3vh;
+    background-color: rgba(70, 7, 7, 0.6);
+    border-radius: 10%;
+    padding: 1em;
+}
+
+.contenedorSubmit{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputAceptar{
+    background-color: rgb(51, 0, 255);
+    border-radius: 10%;
+    padding: 1em;
+    margin-bottom: 2vh;
+}
+
+.inputCancelar{
+    background-color: rgb(255, 0, 0);
+    border-radius: 10%;
+    padding: 1em;
+    margin-bottom: 2vh;
+}
+
+
+/*PLANTILLAS POR ALBUM*/
+
+.tituloPaginaDeDisco{
+    font-size: 2em;
+    padding: 2em;
+}
+
+.descripcionPaginaDeDisco{
+    padding: 2em;
+}
+
+.subtituloPaginaDeDisco{
+    padding: 2em;
+}
+
+.grillaCanciones{
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,0.4);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grillaCancionesHeader{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding: 1em;
+}
+
+.grillaCancionesItem{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 1em;
+
+}
+
+
+/*AÑADIR CANCION*/
+
+.tituloAnadirCancion{
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+.formularioAnadirCancion{
+    padding: 2em;
+}
+
+.contenedorIndividualAnadirCancionForm{
+    background-color: rgba(255,0,0,0.6);
+    margin-bottom: 2em;
+    border-radius: 2em;
+    border: solid black 0.6px;
+}
+
+.labelAnadirCancion{
+    display: flex;
+    padding-left: 1em;
+}
+
+.inputAnadirCancion{
+    float: right;
+    width: 60%;
+    border-radius: 2em;
+    padding-left: 1em;
+}
+
+
+
+/*FECHAS*/
+
+.tituloFechas{
+    padding: 2em 2em 0.5em 2em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.contenedorGrillaFechas{
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.grillaFechasHeader{
+    padding: 1em;
+    border-bottom: solid black 2px;
+}
+
+.grillaFechasItem{
+    padding: 0.5em;
+}

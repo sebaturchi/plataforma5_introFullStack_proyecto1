@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Megadeth</title>
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <ul class="contenedorNavUl">
+                <li class="nombreUsuario"><img src="https://pm1.aminoapps.com/6277/ae64774a6b842da7d5c5b6c3b982d2d7d6d410b5_hq.jpg" alt="foto del usuario" class="fotoUsuarioNav">Sebastian Turchi</li>
+                <li class="liHeader">Agregar Album</li>
+                <li class="liHeader">Fechas de Gira</li>
+                <li class="liHeader">Cerrar Sesión</li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <img class="logoMegadeth" src="../logoBannerHeader.png" alt="logo megadeth">
+        </div>
+
+    </header>
+
+
+    <div class="contenedorHome">
+        <div class="tituloEditarAlbum">
+            <h1>Editar Album</h1>
+        </div>
+
+        <form class="formularioEditarAlbum" action="" method="post">
+            <label class="labelFormulario" for="tituloAlbum"><span class="spanFormulario">Editar nombre del album</span></label>
+            <input class="inputFormulario" type="text" name="tituloAlbum" id="tituloAlbum" placeholder="Ingrese aqui el nombre del album">
+            
+            <br>
+
+            <label class="labelFormulario" for="descripcionAlbum">Descripcion del album</label>
+            <input class="inputFormulario" type="text" name="descripcionAlbum" id="descripcionAlbum" placeholder="Ingrese aqui una descripcion del album">
+
+            <br>
+
+            <label class="labelFormulario" for="imagenAlbum">Ingrese URL con imagen del album</label>
+            <input class="inputFormulario" type="text" name="imagenAlbum" id="imagenAlbum" placeholder="Ingrese aqui la URL de la tapa del album">
+
+            <br>
+
+            <div class="contenedorSubmit">
+                <input class="inputAceptar" type="submit" value="Aceptar">
+                <input class="inputCancelar" type="submit" value="Cancelar">
+            </div>
+
+        </form>
+
+    </div>
+
+
+   
+    
+</body>
+</html>
