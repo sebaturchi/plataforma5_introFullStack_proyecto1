@@ -1,0 +1,4 @@
+vista de registro
+vista de inicio de sesión
+
+que los botones y los formularios hagan algo
