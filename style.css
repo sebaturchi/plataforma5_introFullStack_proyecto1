@@ -3,14 +3,12 @@
 }
 
 body{
-    /*display: flex;
-    justify-content: center; /* Centra el contenedor horizontalmente */
     margin: 0;
     background-image: url('https://cdn.joinnus.com/wp-content/uploads/2023/12/14051633/megadeth.jpg');
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Hace que la imagen esté fija en la pantalla */
-    background-position: center center; /* Posiciona la imagen en el centro */
-    background-size: cover; /* Ajusta la imagen para cubrir el área del fondo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     background-position: 10vw 0vh;
     background-color: black;
 }
@@ -40,9 +38,7 @@ header nav{
 }
 
 .liHeader{
-    /*padding-top: 0.5vh;*/
     padding-left: 3.5vw;
-    /*margin-top: 20vh;*/
     color: rgb(209, 209, 209);
 }
 
@@ -89,7 +85,6 @@ header nav{
     padding-bottom: 4vh;
     padding-left: 2vw;
     color: white;
-    /*border: solid white;*/
     background-color: rgba(70, 7, 7, 0.6);
     border-radius: 2em;
 }
@@ -112,7 +107,22 @@ header nav{
 }
 
 .discografiaHome{
+    display: flex;
+    justify-content: space-between;
     margin-top: 10vh;
+    width: 80vw;
+    border: solid;
+}
+
+.discografiaHomeIzquierda{
+    width: 40vw;
+}
+
+.discografiaHomeDerecha{
+    width: 30vw;
+    height: 100vh;
+    border: solid blue;
+    color: white;
 }
 
 .tituloDiscografiaHome{
@@ -159,6 +169,13 @@ header nav{
     justify-content: space-around;
 }
 
+.botonVerDisco{
+    background-color: blue;
+    font-size: 0.5em;
+    padding: 0.3em;
+    border-radius: 2em;
+}
+
 .botonModificarDisco{
     background-color: blue;
     font-size: 0.5em;
@@ -199,10 +216,6 @@ header nav{
     font-size: 2em;
 }
 
-/*.formularioEditarAlbum{
-    padding-bottom: 10vh;
-}*/
-
 .labelFormulario{
     display: block;
 }
@@ -214,13 +227,6 @@ header nav{
 .labelFormulario{
     margin-bottom: 1vh;
 }
-
-/*.spanFormulario{
-    background-color: rgba(188, 16, 16, 0.6);
-    border-radius: 10%;
-    padding: 1em;
-
-}*/
 
 .inputFormulario{
     width: 60%;
@@ -274,6 +280,18 @@ header nav{
     background-color: rgba(0,0,0,0.4);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+.miniGrillaCanciones{
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 10%;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,0.4);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: aqua;
 }
 
 .grillaCancionesHeader{
